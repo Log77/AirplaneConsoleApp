@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace AirplaneApplication
 {
@@ -17,7 +16,7 @@ namespace AirplaneApplication
             Console.WriteLine("Choose an option:");
             Console.WriteLine("(1) Add passenger");
             Console.WriteLine("(2) Remove passenger");
-            Console.WriteLine("(3) Test");
+            Console.WriteLine("(3) Check if there are any passengers");
             Console.WriteLine("(4) Exit");
             Console.Write("\r\nSelect an option: ");
 
@@ -32,6 +31,7 @@ namespace AirplaneApplication
                     airplane.RemovePassenger(Convert.ToInt32(Console.ReadLine()));
                     return true;
                 case "3":
+                    airplane.TestAddPassenger();
                     return true;
                 case "4":
                     return false;
