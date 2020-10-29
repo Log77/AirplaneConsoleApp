@@ -1,6 +1,6 @@
 ﻿namespace AirplaneApplication
 {
-    class Child : Passenger
+    public class Child : Passenger
     {
     }
 }
